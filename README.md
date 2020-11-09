@@ -1,5 +1,5 @@
 # iSH-config
-My personnal config for a  vanilla iSH
+My personnal config for a  vanilla iSH - not working yet
 
 ## How to use 
 ```
