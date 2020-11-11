@@ -13,3 +13,4 @@ alias update='apk update && apk upgrade'
 export HISTTIMEFORMAT="%d/%m/%y %T "
 alias ls='ls --color=auto'
 EOF
+reboot
