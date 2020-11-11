@@ -4,7 +4,7 @@ wget http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86/apk-tools-static-2.10.5
 tar xf apk-tools-static-2.10.5-r1.apk sbin/apk.static
 ./sbin/apk.static add apk-tools
 rm -r sbin
-apk add openssh openssl sudo nano mandoc man-pages less less-doc
+apk add bash openssl sudo nano mandoc man-pages less less-doc
 cat /etc/passwd | tail -n $(($(cat /etc/passwd | wc -l)-1)) > tmp_passwd && echo 'root:x:0:0:root:/bin/bash' > /etc/passwd && cat tmp_passwd >> /etc/passwd && rm -f tmp_passwd
 sleep 1
 cat << EOF > ~/.bashrc
