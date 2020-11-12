@@ -7,7 +7,7 @@ rm -r sbin
 apk add bash openssl openssh sudo nano mandoc man-pages less less-doc
 cat /etc/passwd | tail -n $(($(cat /etc/passwd | wc -l)-1)) > tmp_passwd && echo 'root:x:0:0:root:/bin/bash' > /etc/passwd && cat tmp_passwd >> /etc/passwd && rm -f tmp_passwd
 sleep 1
-cat << EOF > ~/.bashrc
+cat << EOF > ~/.bash_profile
 export PS1="\u@\h:\w\\$"
 alias update='apk update && apk upgrade'
 export HISTTIMEFORMAT="%d/%m/%y %T "
