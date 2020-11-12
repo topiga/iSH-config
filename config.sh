@@ -13,4 +13,15 @@ alias update='apk update && apk upgrade'
 export HISTTIMEFORMAT="%d/%m/%y %T "
 alias ls='ls --color=auto'
 EOF
+addgroup sudo
+addgroup admin
+adduser user | echo "alpine
+alpine
+"
+adduser user sudo
+adduser admin | echo "admin
+admin
+"
+adduser admin admin
 reboot
+
