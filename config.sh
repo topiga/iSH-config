@@ -23,5 +23,7 @@ admin
 " | adduser admin
 addgroup admin
 addgroup admin admin
+echo "%sudo   ALL=(ALL:ALL) ALL
+%admin     ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 reboot
 
