@@ -14,7 +14,6 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 alias ls='ls --color=auto'
 EOF
 addgroup sudo
-addgroup admin
 echo "alpine
 alpine
 " | adduser user
@@ -22,6 +21,7 @@ adduser user sudo
 echo "admin
 admin
 " | adduser admin
-adduser admin admin
+addgroup admin
+addgroup admin admin
 reboot
 
