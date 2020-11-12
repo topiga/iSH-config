@@ -15,13 +15,13 @@ alias ls='ls --color=auto'
 EOF
 addgroup sudo
 addgroup admin
-adduser user | echo "alpine
+echo "alpine
 alpine
-"
+" | adduser user
 adduser user sudo
-adduser admin | echo "admin
+echo "admin
 admin
-"
+" | adduser admin
 adduser admin admin
 reboot
 
