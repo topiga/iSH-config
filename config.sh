@@ -4,7 +4,10 @@ wget http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86/apk-tools-static-2.10.5
 tar xf apk-tools-static-2.10.5-r1.apk sbin/apk.static
 ./sbin/apk.static add apk-tools
 rm -r sbin
-apk add bash openssl openssh sudo nano mandoc man-pages less less-doc
+apk update && apk upgrade
+apk add bash openssl openssh sudo nano mandoc
+apk add man-pages 
+apk add less less-doc
 addgroup sudo
 echo "user
 user
