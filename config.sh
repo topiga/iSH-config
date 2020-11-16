@@ -17,7 +17,7 @@ echo "alpine
 alpine
 " | passwd root
 echo "%sudo   ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-cat /etc/passwd | sed 's/\/bin\/ash/\/bin\/bash/g' > /etc/passwd
+sed -i 's/\/bin\/ash/\/bin\/bash/g' /etc/passwd
 sleep 1
 cat << EOF > /root/.bash_profile
 export PS1="\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
